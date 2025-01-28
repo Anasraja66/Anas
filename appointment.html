@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Section: Profile and Details -->
+            <div class="col-md-5 border-end">
+                <div class="text-center">
+                    <img src="ppppppppppp.jpg" alt="Profile Picture" class="rounded-circle mb-3">
+                    <h2>Ammar Asjad Raja</h2>
+                    <p class="text-muted">Getting to know Ammar</p>
+                    <p><i class="bi bi-clock"></i> 15 minutes</p>
+                </div>
+            </div>
+
+            <!-- Right Section: Calendar -->
+            <div class="col-md-7">
+                <div class="text-center">
+                    <h4>Select Date & Time</h4>
+                </div>
+                <div class="d-flex justify-content-between align-items-center my-4">
+                    <button class="btn btn-outline-primary" id="prevMonth">&laquo; Previous</button>
+                    <h5 id="monthYear" class="text-center"></h5>
+                    <button class="btn btn-outline-primary" id="nextMonth">Next &raquo;</button>
+                </div>
+                <div class="calendar">
+                    <div class="row text-center">
+                        <div class="col fw-bold">MON</div>
+                        <div class="col fw-bold">TUE</div>
+                        <div class="col fw-bold">WED</div>
+                        <div class="col fw-bold">THU</div>
+                        <div class="col fw-bold">FRI</div>
+                        <div class="col fw-bold">SAT</div>
+                        <div class="col fw-bold">SUN</div>
+                    </div>
+                    <div id="calendarDays" class="row text-center mt-2"></div>
+                </div>
+                <div class="text-center mt-3">
+                    <p class="text-muted">Time Zone: Pakistan, Maldives (3:31 PM)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

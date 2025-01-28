@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0B0E22; /* Dark blue */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('cloud-testing-banner.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.hero .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Cloud Testing Section */
+.cloud-testing {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.cloud-testing img {
+    width: 420%;
+    border-radius: 10px;
+}
+
+.cloud-testing .content {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.cloud-testing h2 {
+    font-size: 28px;
+    color: #0B0E22;
+}
+
+.cloud-testing p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Reasons to Choose Cloud Testing */
+.reasons {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.reasons h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #0B0E22;
+}
+
+.reasons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-left: 5px solid #007bff;
+}
+
+/* Footer */
+.footer {
+    background-color: #0B0E22; /* Dark Blue */
+    color: white;
+    padding: 40px 0;
+}
+
+.footer .container {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer h2, .footer h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social .social-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social .social-icon:hover {
+    color: #007bff;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.schedule-link {
+    display: block;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.schedule-link:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #090C1B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cloud-testing {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cloud-testing img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .cloud-testing .content {
+        width: 100%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

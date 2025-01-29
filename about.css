@@ -86,7 +86,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 123, 255, 0.8); /* Blue background */
+    background-color: white(0, 123, 255, 0.8); /* Blue background */
     color: white;
     padding: 15px 30px;
     border-radius: 10px;

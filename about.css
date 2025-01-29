@@ -1,0 +1,328 @@
+
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff !important; /* Blue Background */
+    padding: 12px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #fff !important;
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff !important;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #ffd700 !important; /* Gold Hover Color */
+    transform: scale(1.05);
+  }
+  
+  /* Navbar Toggler */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      background: #007bff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+    .nav-link {
+      padding: 8px 0;
+      display: block;
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      align-items: center;
+    }
+  }
+  
+/* Full-Screen Image Container */
+.image-container {
+    position: relative;
+    width: 100vw; /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Full-Width Product Image */
+.product-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+/* Overlay Text (Centered Over Image) */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 123, 255, 0.8); /* Blue background */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+}
+
+
+/* K2 Section */
+
+/* K2 Section */
+.k2-section {
+    padding: 100px 0 80px; /* Increased top padding for spacing */
+    background-color: white;
+    margin-top: 20px; /* Added margin to create gap from previous section */
+    
+}
+
+/* Blue Background Heading */
+.k2-heading-container {
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px; /* Increased spacing below heading */
+}
+
+/* K2 Heading */
+.k2-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Content Row */
+.k2-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Image */
+.k2-image {
+    width: 100%;
+    max-width: 500px; /* Adjusted for better proportion */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Box */
+.k2-content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    text-align: left;
+    height: 100%; /* Ensures content height matches the image */
+}
+
+/* Subtitle */
+.k2-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Text */
+.k2-text {
+    font-size: 20px; /* Increased for better readability */
+    color: #333;
+    line-height: 1.8; /* Better spacing */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .k2-heading {
+        font-size: 28px;
+    }
+
+    .k2-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .k2-content-box {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .k2-text {
+        font-size: 18px;
+    }
+}
+
+/* Time Tracking App Section */
+.time-tracking-section {
+    padding: 80px 0;
+    background-color: white;
+    
+}
+
+/* Blue Background Heading */
+.time-tracking-heading-container {
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Time Tracking Heading */
+.time-tracking-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Content Row */
+.time-tracking-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Image */
+.time-tracking-image {
+    width: 100%;
+    max-width: 500px; /* Adjusted for better proportion */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Box */
+.time-tracking-content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+    text-align: left;
+    height: 100%; /* Ensures content height matches the image */
+}
+
+/* Subtitle */
+.time-tracking-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Text */
+.time-tracking-text {
+    font-size: 20px; /* Increased for better readability */
+    color: #333;
+    line-height: 1.8; /* Better spacing */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .time-tracking-heading {
+        font-size: 28px;
+    }
+
+    .time-tracking-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .time-tracking-content-box {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .time-tracking-text {
+        font-size: 18px;
+    }
+}
+/* Footer */
+.footer {
+    background-color: #0B0E22;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-links a {
+    font-size: 16px;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .overlay-img {
+        position: relative;
+        width: 80%;
+        top: 10px;
+        right: 0;
+    }
+}

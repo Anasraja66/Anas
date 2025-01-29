@@ -140,37 +140,6 @@ nextMonth.addEventListener("click", () => {
 });
 
 renderCalendar();
-document.addEventListener("DOMContentLoaded", function () {
-  const counters = document.querySelectorAll(".stat-number");
 
-  const animateCounters = (entries, observer) => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              const counter = entry.target;
-              const target = parseInt(counter.getAttribute("data-target"), 10);
-              let current = 20; // Start from 20
-              const increment = Math.ceil(target / 100); // Adjust speed dynamically
-              const duration = 2000; // Animation duration in milliseconds
-              const stepTime = Math.floor(duration / (target / increment));
 
-              const updateCounter = () => {
-                  current += increment;
-                  counter.textContent = current > target ? target : current;
-                  if (current < target) {
-                      setTimeout(updateCounter, stepTime);
-                  }
-              };
-
-              updateCounter();
-              observer.unobserve(counter); // Stop observing after animation completes
-          }
-      });
-  };
-
-  const observer = new IntersectionObserver(animateCounters, { threshold: 0.5 });
-
-  counters.forEach(counter => {
-      observer.observe(counter);
-  });
-});
 

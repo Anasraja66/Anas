@@ -77,18 +77,48 @@
 
 
 
+
+
+
+.services-section {/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Hero Background Image */
+.hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Hero Content Centering */
+
+
+
 /* Heading Styling */
 .hero-content h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  color:blue; /* Black color */
+  color:white; /* Black color */
   margin-bottom: 10px;
 }
 
 /* Paragraph Styling */
 .hero-content h2 {
   font-size: 1.2rem;
-  color:black; /* Black color */
+  color:white; /* Black color */
   margin-bottom: 20px;
 }
 
@@ -114,8 +144,6 @@ footer {
 }
 
 
-
-.services-section {
   padding: 80px 0;
   background-color: #f8f9fa;
 }

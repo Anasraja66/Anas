@@ -401,7 +401,11 @@ tyling for the advantages section */
         font-size: 1.5rem; /* Smaller heading for narrow screens */
     }
 }
-
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
 /* Section Background */
 #advanced-services {
     background-color: #ffffff;

@@ -1,14 +1,18 @@
 /* styles.css */
 /* Navbar Styling */
-body {
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+
+html, body {
+  overflow-x: hidden; /* Stop side-scrolling */
   width: 100%;
 }
+
 .container {
   max-width: 100% !important;
   overflow-x: hidden;
 }
-img {
+
+/* Ensure images & other elements don’t overflow */
+img, .service-card {
   max-width: 100%;
   height: auto;
 }

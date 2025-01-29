@@ -1,6 +1,16 @@
 // scripts.js
 // Add custom JavaScript here if needed in the future
 // JavaScript to manage focus on cards
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector(".navbar");
+  window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+          navbar.classList.add("shadow-lg");
+      } else {
+          navbar.classList.remove("shadow-lg");
+      }
+  });
+});
 document.querySelectorAll('.service-card').forEach((card) => {
     card.addEventListener('click', () => {
         document.querySelectorAll('.service-card').forEach((otherCard) => {

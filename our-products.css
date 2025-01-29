@@ -1,11 +1,13 @@
 
+
 /* General Styles */
 body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
-navbar {
+/* Navbar Styling */
+.navbar {
     background-color: #007bff !important; /* Blue Background */
     padding: 12px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -106,8 +108,8 @@ navbar {
 /* K2 Section */
 .k2-section {
     padding: 100px 0 80px; /* Increased top padding for spacing */
-    background-color: #f8f9fa;
-    margin-top: 60px; /* Added margin to create gap from previous section */
+    background-color: white;
+    margin-top: 20px; /* Added margin to create gap from previous section */
 }
 
 /* Blue Background Heading */
@@ -193,7 +195,8 @@ navbar {
 /* Time Tracking App Section */
 .time-tracking-section {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: white;
+    
 }
 
 /* Blue Background Heading */

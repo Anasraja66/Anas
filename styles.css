@@ -50,103 +50,118 @@
 
 
 
+
 /* Hero Section Styling */
 .hero-section {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full screen height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
 }
 
 /* Hero Background Image */
 .hero-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* Hero Content Centering */
-
-
-
-
-
-
-.services-section {/* Hero Section Styling */
-.hero-section {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full screen height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-  overflow: hidden;
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 90%;
 }
-
-/* Hero Background Image */
-.hero-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-/* Hero Content Centering */
-
-
 
 /* Heading Styling */
 .hero-content h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color:white; /* Black color */
-  margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
 }
 
 /* Paragraph Styling */
 .hero-content h2 {
-  font-size: 1.2rem;
-  color:white; /* Black color */
-  margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
 }
 
 /* Learn More Button */
 .btn-learn-more {
-  display: inline-block;
-  background: #007bff; /* Blue */
-  color: white;
-  padding: 12px 25px;
-  border-radius: 5px;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: 0.3s ease;
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
 .btn-learn-more:hover {
-  background: #0056b3; /* Darker blue */
+    background: #0056b3;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh; /* Reduce height on mobile */
+        padding: 10px;
+    }
+
+    .hero-image {
+        height: 80vh;
+        object-fit: cover;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    .btn-learn-more {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
 
+@media (max-width: 480px) {
+    .hero-section {
+        height: 70vh;
+    }
 
-  padding: 80px 0;
-  background-color: #f8f9fa;
+    .hero-image {
+        height: 70vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 0.9rem;
+    }
+
+    .btn-learn-more {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
 }
+
 
 .service-card {
   background: white;

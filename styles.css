@@ -398,7 +398,7 @@ img, .service-card {
 
 /* Section Background */
 #advanced-services {
-    background-color: #ffffff;
+    background-color: white;
     padding: 40px 0;
   }
   
@@ -459,7 +459,7 @@ img, .service-card {
 
   /* General Section Styling */
 #advanced-services {
-    background-color: whitesmoke;
+    background-color: white;
     padding: 40px 0;
   }
   
@@ -489,7 +489,7 @@ img, .service-card {
   
   .service-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: white;
   }
   
   /* Image Styling */
@@ -502,7 +502,7 @@ img, .service-card {
   /* Text Section Styling */
   .service-text {
     padding: 15px;
-    background-color: #e9ecef; /* Gray background for text */
+    background-color: white; /* Gray background for text */
   }
   
   .service-text h5 {

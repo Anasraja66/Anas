@@ -1,3 +1,5 @@
+
+
 /* styles.css */
 html, body {
   overflow-x: hidden; /* Stop side-scrolling */
@@ -257,22 +259,22 @@ tyling for the advantages section */
 /* Center the 'Your Advantage' block on the screen */
 
 /* Centering the 'Your Advantage' block above the cards */
+
 .advantage-heading-block {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text color */
-    border: 2px solid black; /* Black border */
-    padding: 20px 40px; /* Adjust padding for content wrapping */
-    display: inline-block; /* Ensures block wraps content */
-    text-align: center;
-    border-radius: 10px; /* Subtle rounded corners */
-    margin: 0 auto 40px; /* Center horizontally and add spacing below */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for spacing */
+  display: inline-block; /* Ensures the block wraps around text */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 24px; /* Adjust text size */
+  font-weight: bold; /* Make text bold */
 }
+
 
 /* Center the block horizontally within its container */
 .advantages-section {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: white;
     text-align: center; /* Ensures all child elements are centered horizontally */
 }
 
@@ -282,7 +284,12 @@ tyling for the advantages section */
     font-weight: 600;
     margin: 0;
     padding: 0; /* Remove extra padding */
-    
+    background-color: #007bff; /* Custom Blue */
+    display: inline-block; /* Ensures the block wraps around text */
+    border-radius: 10px; /* Rounded corners */
+  font-size: 24px; /* Adjust text size */
+  font-weight: bold; /* Make text bold */
+  padding: 10px 20px; /* Padding for spacing */
 }
 
 /* Styling for each advantage card */
@@ -400,11 +407,26 @@ tyling for the advantages section */
     background-color: #ffffff;
     padding: 40px 0;
   }
-  
+  #advanced-services h2{
+    font-size: 24px; /* Adjusted font size for better proportion */
+    font-weight: 600;
+    margin: 0;
+    padding: 0; /* Remove extra padding */
+    background-color: #007bff; /* Blue background */
+    display: inline-block; /* Ensures the block wraps around text */
+    border-radius: 10px; /* Rounded corners */
+  font-size: 24px; /* Adjust text size */
+  font-weight: bold; /* Make text bold */
+  padding: 10px 20px; /* Padding for spacing */
+  }
   /* Heading Background */
   .section-heading {
-    background-color: #007bff;
-  }
+    background-color: #007bff; /* Custom Blue */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
   
   /* Heading Text */
   .section-heading h2 {
@@ -507,13 +529,11 @@ tyling for the advantages section */
   .service-text h5 {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #343a40;
     margin-bottom: 10px;
   }
   
   .service-text p {
     font-size: 1rem;
-    color: #495057;
     line-height: 1.5;
   }
   

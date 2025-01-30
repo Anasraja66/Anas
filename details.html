@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Details</title>
+    <link rel="stylesheet" href="details.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left Side: Appointment Summary -->
+        <div class="col-md-4 text-center">
+            <img src="ppppppppppp.jpg" alt="User Image" class="rounded-circle profile-img">
+            <h3>Getting to know Ammar</h3>
+            <p>15 minutes</p>
+            <p id="selectedDateTime"></p>
+            <p id="selectedCountry"></p>
+        </div>
+
+        <!-- Right Side: User Details Form -->
+        <div class="col-md-8">
+            <h4>Enter details</h4>
+            <form id="detailsForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name *</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject *</label>
+                    <input type="text" class="form-control" id="subject" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail address *</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+
+                <h5>Location *</h5>
+                <div>
+                    <input type="radio" id="googleMeet" name="location" value="Google Meet" required>
+                    <label for="googleMeet"><img src="google_meet.png" alt="Meet" class="icon"> Google Meet</label>
+                </div>
+                <div>
+                    <input type="radio" id="heilbronn" name="location" value="Heilbronn area">
+                    <label for="heilbronn"><span class="icon">📍</span> Heilbronn area</label>
+                </div>
+                <div>
+                    <input type="radio" id="frankfurt" name="location" value="Frankfurt area">
+                    <label for="frankfurt"><span class="icon">📍</span> Frankfurt area</label>
+                </div>
+                <div>
+                    <input type="radio" id="stuttgart" name="location" value="Stuttgart area">
+                    <label for="stuttgart"><span class="icon">📍</span> Stuttgart area</label>
+                </div>
+                <div>
+                    <input type="radio" id="lindau" name="location" value="Lindau am Bodensee area">
+                    <label for="lindau"><span class="icon">📍</span> Lindau am Bodensee area</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Confirm Appointment</button>
+            </form>
+
+            <div id="notification" class="alert alert-success mt-3" style="display: none;">
+                Thanks for the appointment! Please wait for our response.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Extract parameters from URL
+    const params = new URLSearchParams(window.location.search);
+    const selectedDate = params.get("date");
+    const selectedTime = params.get("time");
+    const selectedCountry = params.get("country");
+
+    // Display the selected date, time, and country
+    document.getElementById("selectedDateTime").innerHTML = `<strong>📅 ${selectedDate}, ${selectedTime}</strong>`;
+    document.getElementById("selectedCountry").innerHTML = `<strong>🌍 ${selectedCountry}</strong>`;
+
+    // Form submission event
+    document.getElementById("detailsForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById("name").value;
+        const subject = document.getElementById("subject").value;
+        const email = document.getElementById("email").value;
+        const location = document.querySelector('input[name="location"]:checked').value;
+
+        // Prepare email content
+        const emailBody = `
+            Name: ${name}%0D%0A
+            Subject: ${subject}%0D%0A
+            Email: ${email}%0D%0A
+            Appointment Date: ${selectedDate}%0D%0A
+            Appointment Time: ${selectedTime}%0D%0A
+            Location: ${location}%0D%0A
+            Country: ${selectedCountry}
+        `;
+
+        // Send email using mailto (for basic implementation)
+        window.location.href = `mailto:su2285926@gmail.com?subject=New Appointment&body=${emailBody}`;
+
+        // Show notification
+        document.getElementById("notification").style.display = "block";
+        
+        // Redirect to confirmation page after 3 seconds
+        setTimeout(() => {
+            window.location.href = "confirmation.html";
+        }, 3000);
+    });
+</script>
+
+</body>
+</html>
+

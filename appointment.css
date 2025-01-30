@@ -1,32 +1,20 @@
-/* General styling for the calendar */
-.calendar-day {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 2px;
+
+body {
+    background-color: #f8f9fa;
 }
 
-.calendar-day:hover {
-    background-color: #f0f8ff;
-    border-color: #007bff;
-}
-
-.selected-day {
-    background-color: #007bff;
-    color: white;
-}
-
-/* Profile section styling */
-img.rounded-circle {
+.profile-img {
     width: 100px;
     height: 100px;
 }
 
-p.text-muted {
-    font-size: 0.9rem;
+#timeSlots button.active {
+    background-color: #007bff;
+    color: white;
 }
+
+#countrySelect {
+    max-width: 100%;
+}
+
+

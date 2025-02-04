@@ -1,5 +1,4 @@
 
-
 /* styles.css */
 html, body {
   overflow-x: hidden; /* Stop side-scrolling */
@@ -18,238 +17,97 @@ img, .service-card {
 }
 
 
-/* Navbar Styling */
+
 .navbar {
-  background-color: #007bff !important; /* Blue Background */
-  padding: 12px 0;
+  padding: 15px 0;
 }
-
-/* Navbar Brand */
-.navbar-brand {
-  font-size: 22px;
-  letter-spacing: 0.5px;
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-  font-size: 18px;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  color: #ffd700 !important; /* Gold Hover Color */
-}
-
-/* Appointment Button */
-.btn-light {
-  font-weight: 600;
-  padding: 8px 15px;
-  border-radius: 25px;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-  .navbar-collapse {
-      background: #007bff;
-      padding: 10px;
-      border-radius: 10px;
-  }
-
-  .nav-link {
-      padding: 8px 0;
-      display: block;
-  }
-
-  .btn-light {
-      width: 100%;
-  }
-}
-
-
-/* Hero Section Styling */
 .hero-section {
+  padding: 80px 0;
+}
+.hero-section h1 {
+  font-size: 2.8rem;
+  color: #000;
+}
+.hero-section p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+.services-section {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.service-box {
+  background: #000;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #66ff66;
+}
+
+.team-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.team-icons span {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.service-video {
   position: relative;
+}
+
+.service-video img {
   width: 100%;
-  height: 100vh; /* Full screen height */
+  border-radius: 15px;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Hero Background Image */
-.hero-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+.play-button i {
+  font-size: 1.5rem;
+  color: green;
 }
-
-/* Hero Content Centering */
-.hero-content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  max-width: 90%;
-}
-
-/* Heading Styling */
-.hero-content h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 10px;
-}
-
-/* Paragraph Styling */
-.hero-content h2 {
-  font-size: 1.2rem;
-  color: white;
-  margin-bottom: 20px;
-}
-
-/* Learn More Button */
-.btn-learn-more {
-  display: inline-block;
-  background: #007bff;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 5px;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.btn-learn-more:hover {
-  background: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-section {
-      height: 80vh; /* Reduce height on mobile */
-      padding: 10px;
-  }
-
-  .hero-image {
-      height: 80vh;
-      object-fit: cover;
-  }
-
-  .hero-content h1 {
-      font-size: 2rem; /* Reduce font size */
-  }
-
-  .hero-content h2 {
-      font-size: 1rem;
-  }
-
-  .btn-learn-more {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-      height: 70vh;
-  }
-
-  .hero-image {
-      height: 70vh;
-  }
-
-  .hero-content h1 {
-      font-size: 1.8rem;
-  }
-
-  .hero-content h2 {
-      font-size: 0.9rem;
-  }
-
-  .btn-learn-more {
-      padding: 8px 15px;
-      font-size: 0.8rem;
-  }
-}
-
-/* Services Section */
-.services-section {
-  padding: 80px 0;
-  background-color: white;
-}
-
-/* Service Card Styling */
-.service-card {
-  background: white;
-  border-radius: 15px;
-  padding: 30px;
-  text-align: center;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
-  height: 100%;
-  cursor: pointer;
-  margin-bottom: 70px; /* Adds space between blocks */
-}
-
-/* Hover Effects */
-.service-card:hover {
-  transform: scale(1.05) translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  z-index: 5;
-}
-
-/* Bring clicked card to the front */
-.service-card:focus-within, .service-card:active {
-  transform: scale(1.1);
-  z-index: 10;
-}
-
-/* Service Content */
-.service-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Logo Styling */
-.service-icon {
-  width: 80px; /* Adjusted size */
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 15px;
-}
-
-/* Title Styling */
-.service-card h3 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Description Styling */
-.service-card p {
-  font-size: 16px;
-  color: #6c757d;
-  line-height: 1.6;
-}
-
-/* Responsive Spacing for Mobile */
-@media (max-width: 768px) {
-  .service-card {
-      margin-bottom: 40px; /* More spacing for smaller screens */
-  }
-}
-
-
-
-
 tyling for the advantages section */
 
 /* Center the heading block within its parent container */
@@ -284,7 +142,7 @@ tyling for the advantages section */
     font-weight: 600;
     margin: 0;
     padding: 0; /* Remove extra padding */
-    background-color: #007bff; /* Custom Blue */
+    background-color:#ddd; /* Custom Blue */
     display: inline-block; /* Ensures the block wraps around text */
     border-radius: 10px; /* Rounded corners */
   font-size: 24px; /* Adjust text size */
@@ -356,310 +214,275 @@ tyling for the advantages section */
 }
 
 
-/* Establishment Section Styling */
+
 .establishment-section {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text color */
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    width: 90%; /* Adjust width as needed */
-    max-width: 1200px; /* Optional: limit maximum width */
-    margin: 0 auto; /* Center the block horizontally */
-    padding: 20px; /* Optional: add some padding inside the block */
+  background-color: #F7F7F7;
+  padding: 60px 0;
 }
 
-
-/* Heading Styling */
-.establishment-section h2 {
-    font-size: 1.75rem; /* Adjusted for responsive heading size */
-    font-weight: bold;
-    margin-bottom: 30px;
-    padding: 0 20px; /* Added padding for better alignment */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-/* Statistics Number Styling */
+.section-description {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 .stat-number {
-    font-size: 2.5rem; /* Large font size for numbers */
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
 }
 
-/* Paragraph Styling */
-.establishment-section p {
-    font-size: 1rem; /* Readable paragraph size */
-    margin: 0;
-    padding: 0 10px; /* Padding for better spacing */
+.stat-card p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 10px;
 }
 
-/* Responsive Adjustments */
+.btn-outline-dark {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
 @media (max-width: 768px) {
-    .stat-number {
-        font-size: 2rem; /* Slightly smaller on smaller screens */
-    }
-
-    .establishment-section h2 {
-        font-size: 1.5rem; /* Smaller heading for narrow screens */
-    }
+  .stats-grid {
+      grid-template-columns: 1fr;
+  }
 }
-
-
 /* Section Background */
+
 #advanced-services {
-    background-color: #ffffff;
-    padding: 40px 0;
-  }
-  #advanced-services h2{
-    font-size: 24px; /* Adjusted font size for better proportion */
-    font-weight: 600;
-    margin: 0;
-    padding: 0; /* Remove extra padding */
-    background-color: #007bff; /* Blue background */
-    display: inline-block; /* Ensures the block wraps around text */
-    border-radius: 10px; /* Rounded corners */
-  font-size: 24px; /* Adjust text size */
-  font-weight: bold; /* Make text bold */
-  padding: 10px 20px; /* Padding for spacing */
-  }
-  /* Heading Background */
-  .section-heading {
-    background-color: #007bff; /* Custom Blue */
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
+  background-color: black;
+  padding: 40px 0;
+  text-align: center; /* Center align everything */
+}
+
+/* Section Heading */
+.section-heading {
+  background-color: black; /* Dark background */
+  color: #ffffff; /* White text */
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  text-align: center; /* Ensure text inside is also centered */
+  padding: 10px 0;
+}
+
+/* Card Styling */
+.service-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: white;
+}
+
+/* Image Styling */
+.service-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text Section Styling */
+.service-text {
+  padding: 15px;
+  background-color: white; /* Gray background for text */
+}
+
+.service-text h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Popup Highlight Effect */
+.service-card.active {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: relative;
 }
 
   
-  /* Heading Text */
-  .section-heading h2 {
-    font-weight: bold;
-    font-size: 1.8rem;
-  }
-  
-  /* Card Styling */
-  .service-card {
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .service-image {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 15px;
-  }
-  
-  .card-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  
-  .card-text {
-    font-size: 0.95rem;
-  }
-  
-  /* Popup Styling */
-  .popup {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1050;
-    max-width: 80%;
-    width: 600px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    display: none;
-  }
-
-  /* General Section Styling */
-#advanced-services {
-    background-color: white;
-    padding: 40px 0;
-  }
-  
-  
-  /* Section Heading */
-  .section-heading {
-    background-color: blue; /* Dark background */
-    color: #ffffff; /* White text */
-    font-weight: bold;
-    font-size: 1.8rem;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: fit-content;
-    margin: 0 auto; /* Center the box itself */
-    text-align: center; /* Ensure text inside is also centered */
-  }
-  
-  /* Card Styling */
-  .service-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #ffffff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-    box-shadow: white;
-  }
-  
-  /* Image Styling */
-  .service-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Text Section Styling */
-  .service-text {
-    padding: 15px;
-    background-color: white; /* Gray background for text */
-  }
-  
-  .service-text h5 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .service-text p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  /* Popup Highlight Effect */
-  .service-card.active {
-    transform: scale(1.1);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-    position: relative;
-  }
-  
-  /* CEO Section Styling */
+/* CEO Section Styling */
 .ceo-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #ffffff;
-  }
-  
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.ceo-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* CEO Image */
+.ceo-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CEO Content */
+.ceo-content {
+  text-align: left;
+}
+
+.ceo-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* CEO Profile Section */
+.ceo-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ceo-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ceo-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ceo-info p {
+  font-size: 14px;
+  color: gray;
+  margin: 0;
+}
+
+/* Navigation Buttons */
+.ceo-navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.ceo-navigation button {
+  background: none;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slide-indicator {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .ceo-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-  }
-  
-  .ceo-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .ceo-content {
-    text-align: left;
-  }
-  
-  .ceo-content h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: blue;
-    margin-bottom: 10px;
-  }
-  
-  .ceo-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333333;
-    margin-bottom: 15px;
-  }
-  
-  .ceo-content strong {
-    font-size: 18px;
-    color: #000080;
-  }
-  
-  /* Add responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .ceo-container {
       grid-template-columns: 1fr;
       text-align: center;
-    }
-  
-    .ceo-content {
+  }
+
+  .ceo-content {
       text-align: center;
-    }
   }
-  .our-partners-section {
-    padding: 50px 0;
+
+  .ceo-profile {
+      justify-content: center;
   }
-  
-  .our-partners-heading {
-    background-color: #007bff; /* Bootstrap blue */
-    color: #fff;
-    padding: 15px 20px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: fit-content;
-    margin: 0 auto; /* Center the box itself */
-    text-align: center; /* Ensure text inside is also centered */
+}
+
+ /* Agile Section */
+.agile-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.text-section h2 {
+  font-size: 32px;
+  color: #000;
+}
+
+.highlighted-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Image Styling */
+.agile-image {
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .agile-section .row {
+      flex-direction: column-reverse;
+      text-align: center;
   }
-  
-  
-  .logo-box {
-    border: 2px solid #ddd; /* Light border around the box */
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #f9f9f9; /* Light background for the box */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px; /* Same height for all boxes */
+
+  .agile-image {
+      margin-top: 20px;
   }
-  
-  .logo-box img {
-    max-width: 100%; /* Ensures the image scales within the box */
-    max-height: 100%; /* Ensures the height is within the box */
-    object-fit: contain; /* Maintains the aspect ratio */
-    transition: transform 0.3s ease;
-  }
-  
-  .logo-box img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-  }
-  
-  .modal-body {
-    padding: 20px;
-  }
-  
-  .modal-backdrop.show {
-    opacity: 0.8;
-  }
-    
+}
+
 
 /* Title Box Styling */
 
 /* Title Box Styling */
 .heading-box {
-    background-color: #007bff; /* Blue background */
+    background-color: black; /* Blue background */
     padding: 15px;
     border-radius: 10px;
     display: flex; /* Use flexbox */
@@ -676,55 +499,89 @@ tyling for the advantages section */
     margin: 0;
 }
 
+
 /* Solution Section Styling */
 .solution-section {
-    background-color: #f8f9fa;
-    padding: 60px 0;
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 60px 0;
+  position: relative;
 }
 
 .solution-section h3 {
-    font-size: 24px;
-    color: #007bff; /* Primary blue color */
-    font-weight: bold;
+  font-size: 24px;
+  color: black; /* Primary blue color */
+  font-weight: bold;
 }
 
 .solution-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #6c757d;
-    margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6c757d;
+  margin-bottom: 15px;
 }
 
 .solution-section ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-    list-style-type: disc;
-    color: #6c757d;
-    font-size: 16px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style-type: disc;
+  color: #6c757d;
+  font-size: 16px;
 }
 
 .solution-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .solution-section .btn-primary {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
+
+/* Dark Line Section */
+.dark-line {
+  background-color: #000; /* Black background */
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.dark-line p {
+  font-size: 18px;
+  color: #fff; /* White text */
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.dark-line .btn-outline-light {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.dark-line .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+  background-color: #000;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
   
+  
   .footer {
-    background-color: #10152f;
-    color: #fff;
+    background-color: #10152f; /* Dark blue-gray */
+    color: #cfd8dc; /* Light gray */
     padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
   }
   
   .container {
@@ -739,65 +596,58 @@ body {
     min-width: 200px;
   }
   
+  .footer-section h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
   .footer-logo {
     font-size: 24px;
     font-weight: bold;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 8px;
-  }
-  
-  .footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-section ul li a:hover {
-    text-decoration: underline;
+    color: #00c853; /* Green accent */
   }
   
   .footer-social {
     display: flex;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   
   .social-icon {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
+    font-size: 20px;
+    color: #cfd8dc; /* Light gray */
+    transition: color 0.3s;
   }
   
   .social-icon:hover {
-    color: #007bff;
+    color: #00c853; /* Green accent */
   }
   
-  .schedule-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007bff;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: #cfd8dc;
     text-decoration: none;
-    font-weight: bold;
+    transition: color 0.3s;
   }
   
-  .schedule-link:hover {
-    text-decoration: underline;
+  ul li a:hover {
+    color: #00c853;
   }
   
   .footer-bottom {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
+    color: #cfd8dc;
   }
   

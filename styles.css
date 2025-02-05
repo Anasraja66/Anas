@@ -21,23 +21,48 @@ img, .service-card {
 .navbar {
   padding: 15px 0;
 }
+
 .hero-section {
   padding: 80px 0;
-  margin-top: 40px; /* Adds space above the hero section */
-  margin-bottom: 40px; /* Adds space below the hero section */
+  background-color: #fff;
 }
-.hero-section img {
-  margin-top: 20px; /* Adds space above the hero image */
-  margin-bottom: 40px; /* Adds space below the hero image */
-}
+
 .hero-section h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #000;
 }
+
 .hero-section p {
-  font-size: 1.1rem;
-  color: #333;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 500px;
 }
+
+.hero-section .btn-dark {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.hero-section .btn-outline-dark {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+.partner-logo {
+  width: 80px;
+  margin: 5px 10px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 
 .services-section {
@@ -126,100 +151,97 @@ tyling for the advantages section */
 
 /* Centering the 'Your Advantage' block above the cards */
 
-.advantage-heading-block {
-  background-color: #007bff; /* Blue background */
-  color: white; /* White text */
-  padding: 10px 20px; /* Padding for spacing */
-  display: inline-block; /* Ensures the block wraps around text */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 24px; /* Adjust text size */
-  font-weight: bold; /* Make text bold */
+
+body {
+  background-color: #0D0D0D;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-
-/* Center the block horizontally within its container */
 .advantages-section {
-    padding: 80px 0;
-    background-color: white;
-    text-align: center; /* Ensures all child elements are centered horizontally */
+  padding: 80px 0;
+  text-align: center;
+  background:silver;
 }
 
-
-.advantage-heading-block h2 {
-    font-size: 24px; /* Adjusted font size for better proportion */
-    font-weight: 600;
-    margin: 0;
-    padding: 0; /* Remove extra padding */
-    background-color:#ddd; /* Custom Blue */
-    display: inline-block; /* Ensures the block wraps around text */
-    border-radius: 10px; /* Rounded corners */
-  font-size: 24px; /* Adjust text size */
-  font-weight: bold; /* Make text bold */
-  padding: 10px 20px; /* Padding for spacing */
+.filter-buttons button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 5px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-/* Styling for each advantage card */
+.filter-buttons .active {
+  background: #7AC74F;
+  border-color: #7AC74F;
+  color: black;
+}
+
+.filter-buttons button:hover {
+  background: #7AC74F;
+  border-color: #7AC74F;
+  color: black;
+}
+
+.advantage-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
 .advantage-card {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 350px; /* Increased height */
-    width: 100%;   /* Full width inside the grid */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: transform 0.4s, box-shadow 0.4s;
-    cursor: pointer;
-    border-radius: 20px;
+  position: relative;
+  width: 400px;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
 }
 
-/* Add overlay for text readability */
-.advantage-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust overlay opacity */
-    border-radius: 20px;
-    z-index: 1;
-}
-
-/* Styling for card titles */
-.advantage-card h3 {
-    position: relative;
-    z-index: 2;
-    font-size: 24px; /* Slightly larger text */
-    color: white;
-    margin: 0;
-    text-align: center;
-}
-
-/* Hover effect for cards */
 .advantage-card:hover {
-    transform: scale(1.15) translateY(-10px); /* Enlarges and lifts on hover */
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow */
-    z-index: 10;
+  transform: scale(1.05);
 }
 
-.advantage-card:not(:hover) {
-    transform: scale(0.9);
+.advantage-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-/* Grid responsiveness */
-@media (min-width: 768px) {
-    .advantage-card {
-        height: 360px; /* Larger blocks for medium and up screens */
-    }
+.advantage-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
 }
 
-@media (min-width: 992px) {
-    .advantage-card {
-        height: 360px; /* Even larger blocks for larger screens */
-    }
+.advantage-content h3 {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.8;
+  color: white;
 }
+
+.advantage-content p {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 5px 0 0;
+  color: white;
+}
+
 
 
 
@@ -280,7 +302,7 @@ tyling for the advantages section */
 /* Section Background */
 
 #advanced-services {
-  background-color: black;
+  background-color:whitesmoke;
   padding: 40px 0;
   text-align: center; /* Center align everything */
 }
@@ -555,6 +577,7 @@ tyling for the advantages section */
   background-color: #000; /* Black background */
   padding: 20px 0;
   margin-top: 30px;
+  margin-bottom: 0px
 }
 
 .dark-line p {
@@ -586,8 +609,8 @@ body {
   
   
   .footer {
-    background-color: #10152f; /* Dark blue-gray */
-    color: #cfd8dc; /* Light gray */
+    background-color:white; /* Dark blue-gray */
+    color: black; /* Light gray */
     padding: 40px 20px;
     font-family: 'Arial', sans-serif;
   }
@@ -620,7 +643,7 @@ body {
   .footer-social {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
   .social-icon {
@@ -639,7 +662,7 @@ body {
   }
   
   ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   
   ul li a {

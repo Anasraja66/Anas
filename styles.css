@@ -23,6 +23,12 @@ img, .service-card {
 }
 .hero-section {
   padding: 80px 0;
+  margin-top: 40px; /* Adds space above the hero section */
+  margin-bottom: 40px; /* Adds space below the hero section */
+}
+.hero-section img {
+  margin-top: 20px; /* Adds space above the hero image */
+  margin-bottom: 40px; /* Adds space below the hero image */
 }
 .hero-section h1 {
   font-size: 2.8rem;
@@ -60,6 +66,7 @@ img, .service-card {
   border-radius: 15px;
   text-align: left;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
 }
 
 .service-box h3 {
@@ -83,6 +90,7 @@ img, .service-card {
 
 .service-video {
   position: relative;
+  margin: bottom 40px;
 }
 
 .service-video img {

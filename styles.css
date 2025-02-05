@@ -122,6 +122,14 @@ img, .service-card {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 768px) {
+  .hero-section .btn-dark,
+  .hero-section .btn-outline-dark {
+    display: inline-block;
+    width: auto;
+    margin: 5px 5px; /* Adds spacing between buttons */
+  }
+}
 
 
 

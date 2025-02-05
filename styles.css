@@ -677,8 +677,8 @@ body {
   
   
   .footer {
-    background-color:silver; /* Dark blue-gray */
-    color: black; /* Light gray */
+    background-color:darkblue; /* Dark blue-gray */
+    color: white; /* Light gray */
     padding: 40px 20px;
     font-family: 'Arial', sans-serif;
   }

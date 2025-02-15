@@ -266,7 +266,7 @@ body {
 
 /* Navigation Links */
 .navbar-nav .nav-link {
-  color: #cfd8dc !important; /* Ensure white color */
+  color: white; /* Ensure white color */
   font-size: 16px;
   transition: color 0.3s ease;
 }
@@ -307,29 +307,32 @@ body {
 
 
 
+
 .advantages-section {
   padding: 80px 0;
   text-align: center;
-  background:white;
+  background: white;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .filter-buttons button {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid black;
   color: black;
   padding: 10px 20px;
   border-radius: 25px;
-  margin: 5px;
-  transition: 0.3s;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.filter-buttons .active {
-  background: #7AC74F;
-  border-color: #7AC74F;
-  color: black;
-}
-
+.filter-buttons .active,
 .filter-buttons button:hover {
   background: #7AC74F;
   border-color: #7AC74F;
@@ -346,13 +349,19 @@ body {
 
 .advantage-card {
   position: relative;
-  width: 400px;
+  width: 350px;
   height: 250px;
   border-radius: 15px;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
   transition: transform 0.3s ease;
+  background: #f3f3f3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.advantage-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantage-card:hover {
@@ -391,7 +400,17 @@ body {
   color: white;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .advantage-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .advantage-card {
+    width: 90%;
+  }
+}
 
 .establishment-section {
   background-color: #F7F7F7;

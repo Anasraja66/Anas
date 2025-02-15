@@ -188,8 +188,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// JavaScript to Toggle Navigation Menu
-function toggleMenu() {
-    document.querySelector(".nav-menu").classList.toggle("show");
-  }
+
+
   

@@ -59,25 +59,14 @@ img, .service-card {
 }
 
 /* Buttons */
-
-@media (max-width: 768px) {
-  .hero-section .button-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align to the left */
-    gap: 10px;
-    margin-top: 10px;
-    margin-left: 50px; /* Adjust left margin if needed */
-  }
-
-  .hero-section .btn-dark,
-  .hero-section .btn-outline-dark {
-    width: auto; /* Keep button width natural */
-    display: inline-block;
-    margin: 0;
-  }
+.hero-section .btn-dark,
+.hero-section .btn-outline-dark {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
 }
-
 
 /* Logos */
 .partner-logo {

@@ -114,7 +114,9 @@ img, .service-card {
     margin: 10px auto;
     display: block;
   }
-
+.hero-section .btn btn-outline-dark ms-3{
+  margin-left: 10px;
+}
   .hero-section .partner-logo {
     width: 60px;
     margin: 5px auto;

@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -17,7 +18,7 @@ body {
 
   /* Navbar Styling */
   .navbar {
-    background-color: #007bff !important;
+    background-color:black;
     padding: 12px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -257,5 +258,3 @@ body {
         text-align: center;
     }
 }
-
-

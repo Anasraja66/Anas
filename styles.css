@@ -269,93 +269,51 @@ body {
   background-color: #0a1128;
   padding: 15px 0;
   font-family: 'Arial', sans-serif;
-  position: relative;
-}
-
-/* Container */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
 }
 
 /* Logo */
-.logo a {
+.navbar-brand {
   font-size: 24px;
   font-weight: bold;
   color: #00c853;
   text-decoration: none;
 }
 
-/* Menu Toggle (Hamburger) */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-/* Navigation Menu */
-.nav-menu {
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu ul li {
-  display: inline;
-}
-
-.nav-menu ul li a {
+/* Navigation Links */
+.navbar-nav .nav-link {
   color: #cfd8dc;
-  text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
 }
 
-.nav-menu ul li a:hover {
+.navbar-nav .nav-link:hover {
   color: #00c853;
 }
 
-/* Responsive Design */
+/* Mobile Menu (Bootstrap Handles the Rest) */
+.navbar-toggler {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 24px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Responsive Fix */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-menu {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #0a1128;
+  .navbar-collapse {
+    background-color: #0a1128; /* Match navbar background */
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
   }
 
-  .nav-menu ul {
+  .navbar-nav {
     flex-direction: column;
     gap: 10px;
-  }
-
-  /* Show Menu when Active */
-  .nav-menu.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
   }
 }
 

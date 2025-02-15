@@ -1,6 +1,7 @@
 // scripts.js
 // Add custom JavaScript here if needed in the future
 // JavaScript to manage focus on cards
+
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.querySelector(".navbar");
   window.addEventListener("scroll", function () {
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+
 document.querySelectorAll('.service-card').forEach((card) => {
     card.addEventListener('click', () => {
         document.querySelectorAll('.service-card').forEach((otherCard) => {
@@ -141,5 +143,53 @@ nextMonth.addEventListener("click", () => {
 
 renderCalendar();
 
+document.addEventListener("DOMContentLoaded", function () {
+  const datePicker = document.getElementById("datePicker");
+  const timeContainer = document.getElementById("timeContainer");
+  const forwardBtn = document.getElementById("forwardBtn");
+  const countrySelect = document.getElementById("country");
 
+  let selectedDate = "";
+  let selectedTime = "";
 
+  // Show Time Selection After Choosing a Date
+  datePicker.addEventListener("change", function () {
+      if (datePicker.value) {
+          selectedDate = datePicker.value;
+          timeContainer.style.display = "block";
+      }
+  });
+
+  // Time Selection
+  document.querySelectorAll(".time-slot").forEach(timeSlot => {
+      timeSlot.addEventListener("click", function () {
+          document.querySelectorAll(".time-slot").forEach(slot => slot.classList.remove("selected-time"));
+          timeSlot.classList.add("selected-time");
+
+          selectedTime = timeSlot.textContent.trim();
+          forwardBtn.style.display = "block";
+      });
+  });
+
+  // Proceed to Details Page
+  forwardBtn.addEventListener("click", function () {
+      const selectedCountry = countrySelect.value;
+
+      if (!selectedCountry || !selectedDate || !selectedTime) {
+          alert("Please select country, date, and time.");
+          return;
+      }
+
+      localStorage.setItem("selectedCountry", selectedCountry);
+      localStorage.setItem("selectedDate", selectedDate);
+      localStorage.setItem("selectedTime", selectedTime);
+
+      window.location.href = "details.html";
+  });
+});
+
+// JavaScript to Toggle Navigation Menu
+function toggleMenu() {
+    document.querySelector(".nav-menu").classList.toggle("show");
+  }
+  

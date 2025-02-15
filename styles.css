@@ -269,6 +269,7 @@ body {
   background-color: #0a1128;
   padding: 15px 0;
   font-family: 'Arial', sans-serif;
+  position: relative;
 }
 
 /* Container */
@@ -298,6 +299,10 @@ body {
 }
 
 /* Navigation Menu */
+.nav-menu {
+  transition: all 0.3s ease-in-out;
+}
+
 .nav-menu ul {
   list-style: none;
   display: flex;
@@ -328,14 +333,17 @@ body {
   }
 
   .nav-menu {
-    display: none;
-    width: 100%;
-    text-align: center;
     position: absolute;
     top: 60px;
     left: 0;
+    width: 100%;
     background-color: #0a1128;
+    text-align: center;
     padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
   }
 
   .nav-menu ul {
@@ -343,8 +351,11 @@ body {
     gap: 10px;
   }
 
+  /* Show Menu when Active */
   .nav-menu.show {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 }
 

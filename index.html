@@ -20,24 +20,28 @@
  
   
   
+  
   <!-- Modern Navigation Bar -->
-<header class="navbar">
+<header class="navbar navbar-expand-lg">
   <div class="container">
-    <div class="logo">
-      <a href="index.html">AHDUS DevOps</a>
-    </div>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      ☰
-    </div>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cloud.html">Cloud Testing</a></li>
-        <li><a href="our-products.html">Our Products</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">AHDUS DevOps</a>
+
+    <!-- Toggle Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cloud.html">Cloud Testing</a></li>
+        <li class="nav-item"><a class="nav-link" href="our-products.html">Our Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
 </header>
 
